@@ -1,0 +1,6 @@
+|number|, |physical_name|, |logical_name|, |type|, |example|, |remarks|
+1, id, 商品ID, |int|, 1,
+2, name, 商品名, |str|, 米10kg,
+3, attributesList, 属性リスト, |arr|, [ ], attributeオブジェクトを要素とする / 要素が無い場合は空配列
+3-n-1, id, 属性ID, |int|, 1, attributeオブジェクトのプロパティ
+3-n-2, name, 属性名称, |str|, 食品, attributeオブジェクトのプロパティ

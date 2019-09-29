@@ -1,0 +1,6 @@
+|number|, |physical_name|, |logical_name|, |value|, |remarks|
+1, id, 商品ID, ${:ref:`practice_remake_view1_response`.id},
+2, name, 商品名, ${:ref:`practice_remake_view1_response`.name},
+3, attributesList, 属性リスト, ${:ref:`practice_remake_view1_response`.attributesList},
+3-n-1, id, 属性ID, ${:ref:`practice_remake_view1_response`.attribute.id},
+3-n-2, name, 属性名称, ${:ref:`practice_remake_view1_response`.name},

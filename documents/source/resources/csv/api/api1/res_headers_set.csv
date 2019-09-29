@@ -1,0 +1,3 @@
+|number|, |key|, |value|
+1, content-type, text/json
+2, Access-Control-Allow-Origin,

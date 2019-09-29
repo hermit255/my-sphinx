@@ -1,0 +1,4 @@
+|number|, |key|, |value|
+1, PATH, /products/${id}
+2, METHOD, |GET|
+4, content-type, |html|
