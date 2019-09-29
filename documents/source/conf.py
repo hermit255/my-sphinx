@@ -131,6 +131,9 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+html_sidebars = {
+    '**': ['searchbox.html', 'globaltoc.html'],
+}
 
 # If this is not None, a 'Last updated on:' timestamp is inserted at every
 # page bottom, using the given strftime() format. The empty string is
@@ -232,6 +235,8 @@ def setup(app):
     app.add_stylesheet('css/print-reset.css')
     app.add_stylesheet('css/print-theme-default.css')
     app.add_javascript('js/print.js')
+    # my-setting
+    app.add_stylesheet('css/user.css')
 
 # -- sphinx-themes -----------------------------------------------------------
 # If you would like to use a different theme, do the following.
@@ -240,3 +245,8 @@ def setup(app):
 html_theme = 'sphinx_py3doc_enhanced_theme'
 import sphinx_py3doc_enhanced_theme
 html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
+
+# terms list
+rst_prolog= u"""
+.. include:: /replace/main.txt
+"""
