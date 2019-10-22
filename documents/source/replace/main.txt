@@ -1,6 +1,11 @@
-.. |u| replace:: 甲
-.. |Y| replace:: 乙
-.. |Z| replace:: 丙
+.. |x| replace:: 登録者
+.. |y| replace:: 閲覧者
+.. |z| replace:: 捜索対象
+.. |record| replace:: 捜索依頼
+
+.. パラメータ
+.. |expiration| replace:: 1ヶ月
+.. |image_limit| replace:: 2枚
 
 .. 型
 .. |str| replace:: 文字列
