@@ -73,7 +73,7 @@ graphviz_dot_args = ['-Gfontname=sans-serif', '-Efontname=sans-serif', '-Nfontna
 graphviz_output_format = 'svg'
 
 
-plantuml = 'java -jar /app/plantuml.jar'
+plantuml = 'java -jar /plantuml/plantuml.jar'
 plantuml_output_format = 'svg'
 
 # Add any paths that contain templates here, relative to this directory.
