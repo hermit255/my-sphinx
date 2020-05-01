@@ -52,8 +52,8 @@ RUN apk add --update --no-cache --repository http://dl-cdn.alpinelinux.org/alpin
         ttf-droid-nonlatin \
         openjdk8-jre \
         curl \
-    && mkdir /app \
-    && curl -sSL -o /app/plantuml.jar https://sourceforge.net/projects/plantuml/files/plantuml.${PLANTUML_VERSION}.jar/download \
+    && mkdir /plantuml \
+    && curl -sSL -o /plantuml/plantuml.jar https://sourceforge.net/projects/plantuml/files/plantuml.${PLANTUML_VERSION}.jar/download \
     && mkdir /fonts \
     && curl -sSL -o /fonts/NotoSansCJKjp-Regular.ttf https://github.com/hnakamur/Noto-Sans-CJK-JP/raw/master/fonts/NotoSansCJKjp-Regular.ttf \
     && mkdir -p /usr/share/zoneinfo/Asia \
