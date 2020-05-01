@@ -1,6 +1,11 @@
-.. |u| replace:: 甲
-.. |Y| replace:: 乙
-.. |Z| replace:: 丙
+.. |actorVendor| replace:: アドグローブ
+.. |actorProper| replace:: クロスコミュニケーション
+.. |actorClient| replace:: 東急スポーツオアシス
+.. |actorUserAdmin| replace:: スタッフ
+.. |actorUserEnd| replace:: エンドユーザー
+.. |projectName| replace:: 電子チケットシステム
+.. |serverNew| replace::  新基盤
+.. |serverOld| replace::  旧基盤
 
 .. 型
 .. |str| replace:: 文字列
