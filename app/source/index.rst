@@ -11,7 +11,7 @@
 * うち、本プロジェクトでは管理サイトを構成する
 
 .. csv-table::
-   :file: resources/csv/pageList.csv
+   :file: /app/source/_static/csv/pageList.csv
    :header-rows: 1
    :widths: 1, 10
 

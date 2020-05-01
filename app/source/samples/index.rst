@@ -28,7 +28,7 @@
    import DogIsCute
 
 .. csv-table:: 外部csvデータを素材とした表組み
-   :file: ../resources/csv/test.csv
+   :file: /app/source/_static/csv/test.csv
    :header: a, b, c, d
 
 

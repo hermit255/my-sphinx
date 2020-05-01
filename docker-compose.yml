@@ -2,6 +2,9 @@ version: "3"
 services:
   app:
     # https://github.com/hnakamur/docker-sphinx/tree/9a1504540cce85c8c4f1ae6003b56b82f5efac8a
+    build:
+      context: ${BUILD_1}
+      dockerfile: ${DOCKER_FILE_NAME_1}
     image: ${IMAGE_1}
     container_name: ${CONTAINER_NAME_1}
     environment:
@@ -12,6 +15,7 @@ services:
     volumes:
       - ${WORKDIR_HOST_1}:${WORKDIR_DOCKER_1}
       - ${SCRIPTDIR_HOST_1}:${SCRIPTDIR_DOCKER_1}
+      - ./custom-sphinx-quickstart.sh:${SCRIPTDIR_DOCKER_1}custom-sphinx-quickstart.sh
     working_dir: ${WORKDIR_DOCKER_1}
     ports:
       - ${PORT_HOST_1}:${PORT_DOCKER_1}

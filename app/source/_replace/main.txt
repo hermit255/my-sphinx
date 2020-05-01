@@ -1,0 +1,57 @@
+.. |actorVendor| replace:: ベンダー
+.. |actorProper| replace:: プロパー
+.. |actorClient| replace:: クライアント
+.. |actorUserAdmin| replace:: スタッフ
+.. |actorUserEnd| replace:: エンドユーザー
+.. |projectName| replace:: 電子チケットシステム
+.. |serverNew| replace::  新基盤
+.. |serverOld| replace::  旧基盤
+
+.. 型
+.. |str| replace:: 文字列
+.. |int| replace:: 整数
+.. |bool| replace:: 真偽値
+.. |obj| replace:: オブジェクト
+.. |arr| replace:: 配列
+
+.. ラベル
+.. |number| replace:: 番号
+.. |physical_name| replace:: 物理名
+.. |logical_name| replace:: 論理名
+.. |type| replace:: 型
+.. |key| replace:: キー
+.. |value| replace:: 値
+.. |rules| replace:: 制約
+.. |not_null| replace:: null不許容
+.. |always| replace:: 自要素が常に存在
+.. |parent| replace:: 親
+.. |example| replace:: データ例
+.. |remarks| replace:: 備考
+.. |source| replace:: 取得元
+.. |url| replace:: URL
+.. |path| replace:: パス
+
+.. IF
+.. |interface| replace:: インターフェース
+.. |headers| replace:: ヘッダー等
+.. |params| replace:: パラメータ
+.. |body| replace:: ボディ
+.. |request| replace:: リクエスト
+.. |response| replace:: レスポンス
+.. |response_set| replace:: レスポンス生成・返却
+.. |view_set| replace:: ビュー変数セット
+.. |render| replace:: 画面描画
+.. |event_listen| replace:: イベント捕捉
+.. |process| replace:: 処理
+
+.. |GET| replace:: GET / HTTP/1.1
+.. |POST| replace:: POST / HTTP/1.1
+.. |PUT| replace:: PUT / HTTP/1.1
+.. |PATCH| replace:: PATCH / HTTP/1.1
+.. |DELETE| replace:: DELETE / HTTP/1.1
+
+.. |json| replace:: text/json
+.. |html| replace:: application/x-www-form-urlencoded
+
+
+.. |click| replace:: 押す

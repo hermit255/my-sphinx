@@ -1,0 +1,32 @@
+#!/bin/sh
+dot=_
+
+sphinx-quickstart \
+  --sep \
+  --dot=${dot} \
+  --language=ja \
+  --suffix=.rst \
+  --master=index \
+  --ext-intersphinx \
+  --ext-todo \
+  --ext-ifconfig \
+  --extensions=sphinx.ext.githubpages,sphinxcontrib.japanese_text_join,sphinx_copybutton \
+  --use-make-mode \
+  --makefile \
+  --batchfile \
+  --templatedir=/files/templates/quickstart \
+  -d use_diags=True \
+  -d diag_fontpath=/fonts/NotoSansCJKjp-Regular.ttf \
+  -d diag_image_format=SVG \
+  -d diag_antialias=True \
+  -d use_graphviz=True \
+  -d graphviz_default_fontname=sans-serif \
+  -d graphviz_output_format=svg \
+  -d use_plantuml=True \
+  -d plantuml_output_format=svg \
+  "$@"
+
+mkdir -p ./source/${dot}static/css
+mkdir -p ./source/${dot}static/js
+mkdir -p ./source/${dot}static/img
+mkdir -p ./source/${dot}static/data/csv

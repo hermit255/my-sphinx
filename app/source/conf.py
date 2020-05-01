@@ -231,12 +231,12 @@ todo_include_todos = True
 
 # -- pdf print styles settings -----------------------------------------------
 def setup(app):
-    app.add_stylesheet('css/code-block.css')
-    app.add_stylesheet('css/print-reset.css')
-    app.add_stylesheet('css/print-theme-default.css')
-    app.add_javascript('js/print.js')
+    app.add_css_file('css/code-block.css')
+    app.add_css_file('css/print-reset.css')
+    app.add_css_file('css/print-theme-default.css')
+    app.add_js_file('js/print.js')
     # my-setting
-    app.add_stylesheet('css/user.css')
+    app.add_css_file('css/user.css')
 
 # -- sphinx-themes -----------------------------------------------------------
 # If you would like to use a different theme, do the following.
@@ -248,5 +248,5 @@ html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
 
 # terms list
 rst_prolog= u"""
-.. include:: /replace/main.txt
+.. include:: /_replace/main.txt
 """

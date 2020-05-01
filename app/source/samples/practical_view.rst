@@ -16,12 +16,12 @@
 ---------
 
 .. csv-table:: |headers|
-   :file: ../resources/csv/api/view1/req_headers.csv
+   :file: /app/source/_static/csv/api/view1/req_headers.csv
    :header-rows: 1
    :widths: 8, 40, 60
 
 .. csv-table:: |params|
-   :file: ../resources/csv/api/view1/req_params.csv
+   :file: /app/source/_static/csv/api/view1/req_params.csv
    :header-rows: 1
    :widths: 8, 10, 20, 10, 10, 40
 
@@ -30,7 +30,7 @@
 ----------
 
 .. csv-table:: |headers|
-   :file: ../resources/csv/api/view1/res_headers.csv
+   :file: /app/source/_static/csv/api/view1/res_headers.csv
    :header-rows: 1
    :widths: 8, 40, 60
 
@@ -98,7 +98,7 @@
 ----------------------
 
 .. csv-table::
-   :file: ../resources/csv/api/view1/res_body_set.csv
+   :file: /app/source/_static/csv/api/view1/res_body_set.csv
    :header-rows: 1
    :widths: 8, 10, 12, 30, 30
 
@@ -126,12 +126,12 @@
   gotoページへ遷移する
 
 .. csv-table:: |headers|
-   :file: ../resources/csv/api/view1/req_headers.csv
+   :file: /app/source/_static/csv/api/view1/req_headers.csv
    :header-rows: 1
    :widths: 8, 40, 60
 
 .. csv-table:: |params|
-   :file: ../resources/csv/api/view1/req_params.csv
+   :file: /app/source/_static/csv/api/view1/req_params.csv
    :header-rows: 1
    :widths: 8, 10, 20, 10, 10, 40
 
