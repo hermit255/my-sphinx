@@ -1,3 +1,0 @@
-|number|, |key|, |value|
-1, status, ${:ref:`practice_request_to_api1`.status}
-2, content-type, |html|

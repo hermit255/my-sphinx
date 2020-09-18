@@ -1,16 +1,9 @@
 version: "3"
 services:
-  sphinx:
-    # https://github.com/hnakamur/docker-sphinx/tree/9a1504540cce85c8c4f1ae6003b56b82f5efac8a
-    image: hnakamur/sphinx
-    container_name: ${CONTAINER_NAME}
+  app:
+    build:
+      context: .
     volumes:
-      - ${DOCUMENT_DIR}:/documents
-    environment:
-      - USE_GOSU=1
-      - LOCAL_UID=${UID}
-      - LOCAL_GID=${GID}
-    user: ${UID}:${GID}
+      - ./app/:/docs
     ports:
-      - ${PORT_HOST}:8000
-    command: ${COMMAND}
+      - 8888:8000

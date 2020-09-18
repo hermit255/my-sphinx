@@ -1,3 +1,0 @@
-|number|, |physical_name|, |logical_name|, |type|, |example|, |remarks|
-1, token, ユーザーtoken, |str|, a0bc5481230d9fe, ログイン時に発行されたトークン
-2, item, アイテム番号, |int|, 1, フォームからの入力値
