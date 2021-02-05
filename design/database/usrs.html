@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. ユーザー &#8212;   ドキュメント</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/code-block.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/print-reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/print-theme-default.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/user.css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/print.js"></script>
+    <script src="../../_static/translations.js"></script>
+    
+    <script src="../../_static/sidebar.js"></script>
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="../../samples/index.html" />
+    <link rel="prev" title="1. DB構成" href="relations.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" type="image/png" href="../../_static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
+    
+
+  </head><body>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+        <li><a href="../../index.html">  ドキュメント</a> &#187;</li>
+          <li><a href="index.html" accesskey="U">&lt;no title&gt;</a> &#187;</li> 
+      </ul>
+    </div>
+    
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="usrs-label">
+<h1><span class="section-number">2. </span>ユーザー<a class="headerlink" href="#usrs-label" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id1">
+<h2><span class="section-number">2.1. </span>テーブル定義<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-text">users</span><a class="headerlink" href="#id3" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 21%" />
+<col style="width: 14%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 14%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>物理名</p></th>
+<th class="head"><p>論理名</p></th>
+<th class="head"><p>型</p></th>
+<th class="head"><p>Pキー</p></th>
+<th class="head"><p>Oキー</p></th>
+<th class="head"><p>データ例</p></th>
+<th class="head"><p>備考</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>id</p></td>
+<td><p>ID</p></td>
+<td><p>整数</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1 / 99999</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>name</p></td>
+<td><p>ユーザー 名</p></td>
+<td><p>文字列</p></td>
+<td></td>
+<td></td>
+<td><p>user0401</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>password</p></td>
+<td><p>パスワード</p></td>
+<td><p>文字列</p></td>
+<td></td>
+<td></td>
+<td><p>Yslh45l1h23</p></td>
+<td><p>ユーザー入力値をハッシュ化</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>modified_at</p></td>
+<td><p>データ変更日時</p></td>
+<td><p>日時</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>created_at</p></td>
+<td><p>データ作成日時</p></td>
+<td><p>日時</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id2">
+<h2><span class="section-number">2.2. </span>フラグ・ステータス定義<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">ユーザー種別</span><a class="headerlink" href="#id4" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><th class="stub"><p>1</p></th>
+<td><p>一般ユーザー</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>2</p></th>
+<td><p>特権ユーザー</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>3</p></th>
+<td><p>管理ユーザー</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-text">ステータス</span><a class="headerlink" href="#id5" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><th class="stub"><p>200</p></th>
+<td><p>正常</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>400</p></th>
+<td><p>BadRequest</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>500</p></th>
+<td><p>内部エラー</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <a id="sidebar-anchor"></a>
+    
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script><div id="toc" class="sidebarRow">
+<h3><a href="../../index.html">索引</a></h3>
+<p class="caption"><span class="caption-text">文書管理:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/guide.html">1. 文書管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/todo.html">2. 保留事項</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ビジネス要件:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../business/concept.html">1. プロジェクト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../business/technical.html">2. 技術要件</a></li>
+</ul>
+<p class="caption"><span class="caption-text">アプリケーション設計:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../admin/summary.html">1. 画面構成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/template.html">2. テンプレート画面名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/common.html">3. 共通処理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/states.html">4. 状態管理</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DB設計:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="relations.html">1. DB構成</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. ユーザー</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">2.1. テーブル定義</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">2.2. フラグ・ステータス定義</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">表現方法サンプル:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/basic.html">1. 基本表現</a></li>
+</ul>
+
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../../samples/index.html" title="&lt;no title&gt;"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="relations.html" title="1. DB構成"
+             accesskey="P">前へ</a> |</li>
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      最終更新: 2021-02-05 18:32
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>
