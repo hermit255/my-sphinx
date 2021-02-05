@@ -7,4 +7,4 @@ services:
       - ./app/:/docs
     ports:
       - 8888:8000
-    command: sphinx-build ./source build/html
+    command: sphinx-build ./source ./publish
