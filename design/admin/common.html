@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3. 共通処理 &#8212;   ドキュメント</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/code-block.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/print-reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/print-theme-default.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/user.css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/print.js"></script>
+    <script src="../../_static/translations.js"></script>
+    
+    <script src="../../_static/sidebar.js"></script>
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="4. 状態管理" href="states.html" />
+    <link rel="prev" title="2. テンプレート画面名" href="template.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" type="image/png" href="../../_static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
+    
+
+  </head><body>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+        <li><a href="../../index.html">  ドキュメント</a> &#187;</li>
+          <li><a href="index.html" accesskey="U">&lt;no title&gt;</a> &#187;</li> 
+      </ul>
+    </div>
+    
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1><span class="section-number">3. </span>共通処理<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2><span class="section-number">3.1. </span>ユーザー認証<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id3">
+<h3><span class="section-number">3.1.1. </span>ログイン<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<blockquote>
+<div><p>Laravel標準のユーザー認証を使用、以下概要</p>
+<p>以下を満たすとき <code class="docutils literal notranslate"><span class="pre">session.user</span></code> に <code class="docutils literal notranslate"><span class="pre">usrs.name</span></code> がセットされる</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">POST.name</span></code> が <code class="docutils literal notranslate"><span class="pre">usrs.name</span></code> と等しい</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">POST.password</span></code> をハッシュ化した値が <code class="docutils literal notranslate"><span class="pre">usrs.name</span></code> と等しい</p></li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h3><span class="section-number">3.1.2. </span>ログイン後の認証<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<blockquote>
+<div><p>Laravel標準のユーザー認証を使用、概要は以下</p>
+<p><strong>太字 Aの場合</strong></p>
+<p>Aの処理パターン</p>
+<p><strong>太字 Bの場合</strong></p>
+<p>Bの処理パターン</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="kvs">
+<h2><span class="section-number">3.2. </span>KVS<a class="headerlink" href="#kvs" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="redis">
+<h3><span class="section-number">3.2.1. </span>Redis<a class="headerlink" href="#redis" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<blockquote>
+<div><p>キー名の規則など</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id5">
+<h2><span class="section-number">3.3. </span>エラー処理<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<blockquote>
+<div><p>ログ出力など</p>
+</div></blockquote>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <a id="sidebar-anchor"></a>
+    
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script><div id="toc" class="sidebarRow">
+<h3><a href="../../index.html">索引</a></h3>
+<p class="caption"><span class="caption-text">文書管理:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/guide.html">1. 文書管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/todo.html">2. 保留事項</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ビジネス要件:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../business/concept.html">1. プロジェクト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../business/technical.html">2. 技術要件</a></li>
+</ul>
+<p class="caption"><span class="caption-text">アプリケーション設計:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="summary.html">1. 画面構成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="template.html">2. テンプレート画面名</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 共通処理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.1. ユーザー認証</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kvs">3.2. KVS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.3. エラー処理</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="states.html">4. 状態管理</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DB設計:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../database/relations.html">1. DB構成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/usrs.html">2. ユーザー</a></li>
+</ul>
+<p class="caption"><span class="caption-text">表現方法サンプル:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/basic.html">1. 基本表現</a></li>
+</ul>
+
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="states.html" title="4. 状態管理"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="template.html" title="2. テンプレート画面名"
+             accesskey="P">前へ</a> |</li>
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      最終更新: 2021-02-05 17:20
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

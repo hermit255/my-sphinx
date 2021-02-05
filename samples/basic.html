@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. 基本表現 &#8212;   ドキュメント</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/code-block.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/print-reset.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/print-theme-default.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/user.css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/print.js"></script>
+    <script src="../_static/translations.js"></script>
+    
+    <script src="../_static/sidebar.js"></script>
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="index.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" type="image/png" href="../_static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
+    
+
+  </head><body>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+        <li><a href="../index.html">  ドキュメント</a> &#187;</li>
+          <li><a href="index.html" accesskey="U">&lt;no title&gt;</a> &#187;</li> 
+      </ul>
+    </div>
+    
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1><span class="section-number">1. </span>基本表現<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>公式ページ解説: <a class="reference external" href="https://planset-study-sphinx.readthedocs.io/ja/latest/04.html">https://planset-study-sphinx.readthedocs.io/ja/latest/04.html</a></p>
+<div class="section" id="index">
+<h2><span class="section-number">1.1. </span>index(目次リンク)<a class="headerlink" href="#index" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+   <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">1</span>
+   <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">文書管理</span>
+   <span class="p">:</span><span class="n">numbered</span><span class="p">:</span>
+
+   <span class="n">basic</span>
+</pre></div>
+</div>
+<p>各見出しに添える点線は、文字部分よりも長くなければなりません</p>
+</div>
+<div class="section" id="id2">
+<h2><span class="section-number">1.2. </span>見出し1<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">================================</span>
+<span class="n">基本表現</span>
+<span class="o">================================</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2><span class="section-number">1.3. </span>見出し2(章タイトルに相当)<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">見出し2</span>
+<span class="o">================================</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2><span class="section-number">1.4. </span>見出し3(章内セクションに相当)<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">見出し3</span>
+<span class="o">--------------------------------</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2><span class="section-number">1.5. </span>箇条書き<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>箇条書き</p></li>
+<li><p>箇条書き</p></li>
+</ul>
+<ul class="simple">
+<li><p><a href="#id6"><span class="problematic" id="id7">*</span></a>でも-でも可能</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">箇条書き</span>
+<span class="o">-</span> <span class="n">箇条書き</span>
+<span class="o">*</span> <span class="o">*</span><span class="n">でも</span><span class="o">-</span><span class="n">でも可能</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2><span class="section-number">1.6. </span>箇条書き(ナンバリング)<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ol class="arabic simple">
+<li><p>箇条書き</p></li>
+<li><p>箇条書き</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#. 箇条書き</span>
+<span class="c1">#. 箇条書き</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2><span class="section-number">1.7. </span>表組み<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="csv">
+<h3><span class="section-number">1.7.1. </span>csv読込<a class="headerlink" href="#csv" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="colwidths-given docutils align-default" id="id12">
+<caption><span class="caption-text">users</span><a class="headerlink" href="#id12" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 21%" />
+<col style="width: 14%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 14%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>物理名</p></th>
+<th class="head"><p>論理名</p></th>
+<th class="head"><p>型</p></th>
+<th class="head"><p>Pキー</p></th>
+<th class="head"><p>Oキー</p></th>
+<th class="head"><p>データ例</p></th>
+<th class="head"><p>備考</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>id</p></td>
+<td><p>ID</p></td>
+<td><p>整数</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>1 / 99999</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>name</p></td>
+<td><p>ユーザー 名</p></td>
+<td><p>文字列</p></td>
+<td></td>
+<td></td>
+<td><p>user0401</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>password</p></td>
+<td><p>パスワード</p></td>
+<td><p>文字列</p></td>
+<td></td>
+<td></td>
+<td><p>Yslh45l1h23</p></td>
+<td><p>ユーザー入力値をハッシュ化</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>modified_at</p></td>
+<td><p>データ変更日時</p></td>
+<td><p>日時</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>created_at</p></td>
+<td><p>データ作成日時</p></td>
+<td><p>日時</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>↑の表は↓のコードによって書かれています</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">csv</span><span class="o">-</span><span class="n">table</span><span class="p">::</span> <span class="o">|</span><span class="n">usrs</span><span class="o">.</span><span class="n">table</span><span class="o">|</span>
+   <span class="p">:</span><span class="n">file</span><span class="p">:</span> <span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">source</span><span class="o">/</span><span class="n">_static</span><span class="o">/</span><span class="n">csv</span><span class="o">/</span><span class="n">database</span><span class="o">/</span><span class="n">users</span><span class="o">.</span><span class="n">csv</span>
+   <span class="p">:</span><span class="n">header</span><span class="o">-</span><span class="n">rows</span><span class="p">:</span> <span class="mi">1</span>
+   <span class="p">:</span><span class="n">widths</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="markdown">
+<h3><span class="section-number">1.7.2. </span>markdown風<a class="headerlink" href="#markdown" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 32%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>col1</p></th>
+<th class="head"><p>col2</p></th>
+<th class="head"><p>col3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>row1</p></td>
+<td><p>a</p></td>
+<td><p>b</p></td>
+</tr>
+<tr class="row-odd"><td><p>row2</p></td>
+<td><p>a</p></td>
+<td><p>b</p></td>
+</tr>
+<tr class="row-even"><td><p>row3</p></td>
+<td><p>a</p></td>
+<td><p>b</p></td>
+</tr>
+</tbody>
+</table>
+<p>↑の表は↓のコードによって書かれています</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=======</span> <span class="o">======</span> <span class="o">======</span>
+<span class="n">col1</span>    <span class="n">col2</span>   <span class="n">col3</span>
+<span class="o">=======</span> <span class="o">======</span> <span class="o">======</span>
+<span class="n">row1</span>    <span class="n">a</span>      <span class="n">b</span>
+<span class="n">row2</span>    <span class="n">a</span>      <span class="n">b</span>
+<span class="n">row3</span>    <span class="n">a</span>      <span class="n">b</span>
+<span class="o">=======</span> <span class="o">======</span> <span class="o">======</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3><span class="section-number">1.7.3. </span>その場でCSV風に書く<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="colwidths-given docutils align-default" id="id13">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id13" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Treat</p></th>
+<th class="head"><p>Quantity</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Albatross</p></td>
+<td><p>2.99</p></td>
+<td><p>On a stick!</p></td>
+</tr>
+<tr class="row-odd"><td><p>Crunchy Frog</p></td>
+<td><p>1.49</p></td>
+<td><p>If we took the bones out, it wouldn't be
+crunchy, now would it?</p></td>
+</tr>
+<tr class="row-even"><td><p>Gannet Ripple</p></td>
+<td><p>1.99</p></td>
+<td><p>On a stick!</p></td>
+</tr>
+</tbody>
+</table>
+<p>↑の表は↓のコードによって書かれています</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. csv-table:: Frozen Delights!
+    :header: &quot;Treat&quot;, &quot;Quantity&quot;, &quot;Description&quot;
+    :widths: 15, 10, 30
+
+    &quot;Albatross&quot;, 2.99, &quot;On a stick!&quot;
+    &quot;Crunchy Frog&quot;, 1.49, &quot;If we took the bones out, it wouldn&#39;t be
+    crunchy, now would it?&quot;
+    &quot;Gannet Ripple&quot;, 1.99, &quot;On a stick!&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3><span class="section-number">1.7.4. </span>リストテーブル<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Treat</p></th>
+<th class="head"><p>Quantity</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Albatross</p></td>
+<td><p>2.99</p></td>
+<td><p>On a stick!</p></td>
+</tr>
+<tr class="row-odd"><td><p>Crunchy Frog</p></td>
+<td><p>1.49</p></td>
+<td><p>If we took the bones out, it wouldn't be
+crunchy, now would it?</p></td>
+</tr>
+<tr class="row-even"><td><p>Gannet Ripple</p></td>
+<td><p>1.99</p></td>
+<td><p>On a stick!</p></td>
+</tr>
+</tbody>
+</table>
+<p>↑の表は↓のコードによって書かれています</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. list-table::
+    :widths: 15 10 30
+    :header-rows: 1
+
+    * - Treat
+      - Quantity
+      - Description
+    * - Albatross
+      - 2.99
+      - On a stick!
+    * - Crunchy Frog
+      - 1.49
+      - If we took the bones out, it wouldn&#39;t be
+        crunchy, now would it?
+    * - Gannet Ripple
+      - 1.99
+      - On a stick!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="plantuml">
+<h2><span class="section-number">1.8. </span>PlantUml<a class="headerlink" href="#plantuml" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>公式ページ解説: <a class="reference external" href="https://plantuml.com/ja/sequence-diagram">https://plantuml.com/ja/sequence-diagram</a></p>
+<p>↑の図は↓のコードによって書かれています</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. uml::
+
+  !define MAIN_ENTITY #E2EFDA-C6E0B4
+  !define MAIN_ENTITY_2 #FCE4D6-F8CBAD
+
+  !define METAL #F2F2F2-D9D9D9
+  !define MASTER_MARK_COLOR AAFFAA
+  !define TRANSACTION_MARK_COLOR FFAA00
+
+  skinparam class {
+    BackgroundColor METAL
+    BorderColor Black
+    ArrowColor Black
+  }
+
+  package &quot;データベース&quot; as DB &lt;&lt;Database&gt;&gt; {
+      entity &quot;テーブルA&quot; as table_A &lt;&lt;M,MASTER_MARK_COLOR&gt;&gt; {
+        外部キー
+        --
+        ID
+        名前
+      }
+
+      entity &quot;テーブルB&quot; as table_B &lt;&lt;M,MASTER_MARK_COLOR&gt;&gt; {
+        外部キー
+        --
+        ID
+        名前
+      }
+
+      table_A ---o{  table_B
+  }
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <a id="sidebar-anchor"></a>
+    
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script><div id="toc" class="sidebarRow">
+<h3><a href="../index.html">索引</a></h3>
+<p class="caption"><span class="caption-text">文書管理:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../docs/guide.html">1. 文書管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/todo.html">2. 保留事項</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ビジネス要件:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../business/concept.html">1. プロジェクト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../business/technical.html">2. 技術要件</a></li>
+</ul>
+<p class="caption"><span class="caption-text">アプリケーション設計:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../design/admin/summary.html">1. 画面構成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design/admin/template.html">2. テンプレート画面名</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design/admin/common.html">3. 共通処理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design/admin/states.html">4. 状態管理</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DB設計:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../design/database/relations.html">1. DB構成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design/database/usrs.html">2. ユーザー</a></li>
+</ul>
+<p class="caption"><span class="caption-text">表現方法サンプル:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 基本表現</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#index">1.1. index(目次リンク)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">1.2. 見出し1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">1.3. 見出し2(章タイトルに相当)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">1.4. 見出し3(章内セクションに相当)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">1.5. 箇条書き</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">1.6. 箇条書き(ナンバリング)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">1.7. 表組み</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plantuml">1.8. PlantUml</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="index.html" title="&lt;no title&gt;"
+             accesskey="P">前へ</a> |</li>
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      最終更新: 2021-02-05 17:20
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>
