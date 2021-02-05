@@ -1,0 +1,3 @@
+No, 論理名, name, type, |design.form.expected|, |design.form.default|, |design.form.required|, |label.optional|
+1, ユーザー名, user, text, 半角 & 文字数: 1 - 30, blank,,
+2, パスワード, password, select, 半角 & 文字数: 1 - 30, blank,,

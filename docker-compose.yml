@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./app/:/docs
+    ports:
+      - 8888:8000
+    command: sphinx-build ./source ./publish
