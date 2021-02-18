@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. 基本表現 &#8212;   ドキュメント</title>
+    <title>1. 基本表現 &#8212; Project Name 1.0.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -36,7 +36,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
-        <li><a href="../index.html">  ドキュメント</a> &#187;</li>
+        <li><a href="../index.html">Project Name 1.0.0 ドキュメント</a> &#187;</li>
           <li><a href="index.html" accesskey="U">&lt;no title&gt;</a> &#187;</li> 
       </ul>
     </div>
@@ -332,6 +332,40 @@ crunchy, now would it?</p></td>
 <div class="section" id="plantuml">
 <h2><span class="section-number">1.8. </span>PlantUml<a class="headerlink" href="#plantuml" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>公式ページ解説: <a class="reference external" href="https://plantuml.com/ja/sequence-diagram">https://plantuml.com/ja/sequence-diagram</a></p>
+<p class="plantuml">
+<object data="../_images/plantuml-651054462e9e131b0f3bcf55c755339b760cc84c.svg" type="image/svg+xml" style="width:154px;height:395px;">
+<img src="../_images/plantuml-651054462e9e131b0f3bcf55c755339b760cc84c.png" alt="!define MAIN_ENTITY #E2EFDA-C6E0B4
+!define MAIN_ENTITY_2 #FCE4D6-F8CBAD
+
+!define METAL #F2F2F2-D9D9D9
+!define MASTER_MARK_COLOR AAFFAA
+!define TRANSACTION_MARK_COLOR FFAA00
+
+skinparam class {
+  BackgroundColor METAL
+  BorderColor Black
+  ArrowColor Black
+}
+
+package &quot;データベース&quot; as DB &lt;&lt;Database&gt;&gt; {
+    entity &quot;テーブルA&quot; as table_A &lt;&lt;M,MASTER_MARK_COLOR&gt;&gt; {
+      外部キー
+      --
+      ID
+      名前
+    }
+
+    entity &quot;テーブルB&quot; as table_B &lt;&lt;M,MASTER_MARK_COLOR&gt;&gt; {
+      外部キー
+      --
+      ID
+      名前
+    }
+
+    table_A ---o{  table_B
+}"/>
+
+</object></p>
 <p>↑の図は↓のコードによって書かれています</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. uml::
 
@@ -446,9 +480,9 @@ crunchy, now would it?</p></td>
     </div>
 
     <div class="footer" role="contentinfo">
-        &#169; Copyright .
-      最終更新: 2021-02-05 18:32
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+        &#169; Copyright hermit255.
+      最終更新: 2021-02-19 07:35
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.1.
     </div>
   </body>
 </html>
