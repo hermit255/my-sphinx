@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u''
-copyright = u''
-author = u''
+project = u'Project Name'
+copyright = u'hermit255'
+author = u'hermit255'
 
 # The short X.Y version
-version = u''
+version = u'1.0'
 # The full version, including alpha/beta/rc tags
-release = u''
+release = u'1.0.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -71,7 +71,7 @@ graphviz_dot_args = ['-Gfontname=sans-serif', '-Efontname=sans-serif', '-Nfontna
 graphviz_output_format = 'svg'
 
 
-plantuml = 'java -jar /app/plantuml.jar'
+plantuml = 'java -jar /plantuml/plantuml.jar'
 plantuml_output_format = 'svg'
 
 # Add any paths that contain templates here, relative to this directory.
