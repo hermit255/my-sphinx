@@ -240,9 +240,8 @@ def setup(app):
 # If you would like to use a different theme, do the following.
 # 1. Copy code from conf.py of your favorite theme at https://sphinx-themes.org/
 # 2. Modify Dockerfile to install the theme.
-html_theme = 'sphinx_py3doc_enhanced_theme'
-import sphinx_py3doc_enhanced_theme
-html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
+extensions.append("uedoc_theme")
+html_theme = "uedoc_theme"
 
 # terms list
 rst_prolog= u"""

@@ -2,7 +2,7 @@ sphinx
 sphinx-autobuild
 sphinx_fontawesome
 sphinx_rtd_theme
-sphinx_py3doc_enhanced_theme
+sphinx_uedoc_theme
 sphinxcontrib-blockdiag
 sphinxcontrib-seqdiag
 sphinxcontrib-actdiag
