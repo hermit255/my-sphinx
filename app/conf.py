@@ -235,11 +235,7 @@ todo_include_todos = True
 # -- pdf print styles settings -----------------------------------------------
 def setup(app):
     app.add_css_file('css/code-block.css')
-    app.add_css_file('css/print-reset.css')
-    app.add_css_file('css/print-theme-default.css')
-    app.add_js_file('js/print.js')
-    # my-setting
-    app.add_css_file('css/user.css')
+    app.add_css_file('css/custom.css')
 
 # -- sphinx-themes -----------------------------------------------------------
 # If you would like to use a different theme, do the following.
