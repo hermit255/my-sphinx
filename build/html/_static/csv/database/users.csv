@@ -1,6 +1,0 @@
-|label.num|, |label.name_phy|, |label.name_loc|, |label.type|, |label.pkey|, |label.okey|, |label.eg|, |label.remarks|
-1, |comm.id|, |comm.id.label|, |val.int|,1 ,, 1 / 99999,
-2, |usrs.name|, |usrs.name.label|, |val.str|,,, user0401,
-3, |comm.password|, |comm.password.label|, |val.str|,,, Yslh45l1h23, ユーザー入力値をハッシュ化
-4, |comm.modified_at|, |comm.modified_at.label|, |val.datetime|,,,,
-5, |comm.created_at|, |comm.created_at.label|, |val.datetime|,,,,
