@@ -3,6 +3,8 @@ services:
   app:
     build:
       context: .
+      args:
+        PLANTUML_DIR: "/plantuml"
     volumes:
       - ./app/:/docs
     ports:
