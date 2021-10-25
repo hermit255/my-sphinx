@@ -1,21 +1,5 @@
 version: "3"
 services:
-<<<<<<< HEAD
-  sphinx:
-    # https://github.com/hnakamur/docker-sphinx/tree/9a1504540cce85c8c4f1ae6003b56b82f5efac8a
-    image: hnakamur/sphinx
-    container_name: ${CONTAINER_NAME}
-    volumes:
-      - ${DOCUMENT_DIR}:/documents
-    environment:
-      - USE_GOSU=1
-      - LOCAL_UID=${UID}
-      - LOCAL_GID=${GID}
-    user: ${UID}:${GID}
-    ports:
-      - ${PORT_HOST}:8000
-    command: ${COMMAND}
-=======
   app:
     build:
       context: .
@@ -32,4 +16,3 @@ services:
       FONT_DIR: "/font"
       STATIC_DIR: "_static"
       TEMPLATE_DIR: "_templates"
->>>>>>> develop
