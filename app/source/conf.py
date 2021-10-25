@@ -16,6 +16,11 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import os
+plantuml_dir = os.environ['PLANTUML_DIR']
+font_dir = os.environ['FONT_DIR']
+static_dir = os.environ['STATIC_DIR']
+template_dir = os.environ['TEMPLATE_DIR']
 
 # -- Project information -----------------------------------------------------
 
@@ -52,10 +57,10 @@ extensions = [
     'sphinxcontrib.plantuml',
 ]
 
-blockdiag_fontpath = '/fonts/NotoSansCJKjp-Regular.ttf'
-seqdiag_fontpath = '/fonts/NotoSansCJKjp-Regular.ttf'
-actdiag_fontpath = '/fonts/NotoSansCJKjp-Regular.ttf'
-nwdiag_fontpath = '/fonts/NotoSansCJKjp-Regular.ttf'
+blockdiag_fontpath = '%s/NotoSansCJKjp-Regular.ttf' % font_dir
+seqdiag_fontpath = '%s/NotoSansCJKjp-Regular.ttf' % font_dir
+actdiag_fontpath = '%s/NotoSansCJKjp-Regular.ttf' % font_dir
+nwdiag_fontpath = '%s/NotoSansCJKjp-Regular.ttf' % font_dir
 
 blockdiag_html_image_format = 'SVG'
 seqdiag_html_image_format = 'SVG'
@@ -71,11 +76,11 @@ graphviz_dot_args = ['-Gfontname=sans-serif', '-Efontname=sans-serif', '-Nfontna
 graphviz_output_format = 'svg'
 
 
-plantuml = 'java -jar /plantuml/plantuml.jar'
+plantuml = 'java -jar %s/plantuml.jar' % plantuml_dir
 plantuml_output_format = 'svg'
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = [template_dir]
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -118,7 +123,7 @@ pygments_style = None
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = [static_dir]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.

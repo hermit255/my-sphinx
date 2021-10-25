@@ -5,7 +5,13 @@ services:
       context: .
       args:
         PLANTUML_DIR: "/plantuml"
+        FONT_DIR: "/font"
     volumes:
       - ./app/:/docs
     ports:
       - 8888:8000
+    environment:
+      PLANTUML_DIR: "/plantuml"
+      FONT_DIR: "/font"
+      STATIC_DIR: "_static"
+      TEMPLATE_DIR: "_templates"
