@@ -1,0 +1,26 @@
+name: Sphinx build with container
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Docker Hub image that `container-job` executes in
+    # container: node:10.18-jessie
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Starts container
+        run: docker-compose up -d
+
+      - name: Sleep for 30 seconds
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '30s'
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./app/build/html

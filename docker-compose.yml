@@ -1,5 +1,6 @@
 version: "3"
 services:
+<<<<<<< HEAD
   sphinx:
     # https://github.com/hnakamur/docker-sphinx/tree/9a1504540cce85c8c4f1ae6003b56b82f5efac8a
     image: hnakamur/sphinx
@@ -14,3 +15,21 @@ services:
     ports:
       - ${PORT_HOST}:8000
     command: ${COMMAND}
+=======
+  app:
+    build:
+      context: .
+      args:
+        PLANTUML_DIR: "/plantuml"
+        FONT_DIR: "/font"
+    volumes:
+      - ./app/:/docs/source
+      - ./build/:/docs/build
+    ports:
+      - 8888:8000
+    environment:
+      PLANTUML_DIR: "/plantuml"
+      FONT_DIR: "/font"
+      STATIC_DIR: "_static"
+      TEMPLATE_DIR: "_templates"
+>>>>>>> develop

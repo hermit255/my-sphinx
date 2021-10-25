@@ -1,0 +1,161 @@
+.. ドキュメント
+.. |docs.version| replace:: バージョン
+.. |docs.author| replace:: 作成者
+.. |docs.description| replace:: 説明
+
+.. 値の説明用語
+.. |val.not_defined| replace:: 未定義
+.. |val.str| replace:: 文字列
+.. |val.str_blank| replace:: 空文字
+.. |val.int| replace:: 整数
+.. |val.null| replace:: NULL
+.. |val.date| replace:: date
+.. |val.datetime| replace:: 日時
+.. |val.now| replace:: 現在日時
+.. |val.today| replace:: 現在日付
+.. |val.timestamp| replace:: タイムスタンプ
+.. |val.bool| replace:: 真偽値
+.. |val.true| replace:: 真
+.. |val.false| replace:: 偽
+.. |val.obj| replace:: オブジェクト
+.. |val.array| replace:: 配列
+.. |val.array_blank| replace:: 配列
+
+.. ラベル
+.. |label.num| replace:: No
+.. |label.seq| replace:: 並び順
+.. |label.name_phy| replace:: 物理名
+.. |label.name_loc| replace:: 論理名
+.. |label.type| replace:: 型
+.. |label.key| replace:: キー
+.. |label.val| replace:: 値
+.. |label.rules| replace:: 制約
+.. |label.not_null| replace:: null不許容
+.. |label.optional| replace:: optional
+.. |label.eg| replace:: データ例
+.. |label.remarks| replace:: 備考
+.. |label.src| replace:: 取得元
+.. |label.url| replace:: URL
+.. |label.path| replace:: パス
+.. |label.scheme| replace:: スキーム
+.. |label.pkey| replace:: Pキー
+.. |label.okey| replace:: Oキー
+
+.. 設計書
+.. |design.if| replace:: インターフェース
+.. |design.page| replace:: 画面
+.. |design.page.info| replace:: |design.page| 基本情報
+.. |design.page.title| replace:: タイトル(メタ情報)
+.. |design.view| replace:: 画面
+
+.. |design.proc| replace:: データ処理
+.. |design.proc.render| replace:: 画面描画
+.. |design.proc.res| replace:: レスポンス生成・返却
+.. |design.proc.set_view_vars| replace:: ビュー変数セット
+
+.. |design.db.columns| replace:: 項目
+.. |design.db.cond| replace:: 条件
+.. |design.db.order| replace:: 順序
+.. |design.db.range| replace:: 範囲
+.. |design.db.update| replace:: 更新
+.. |design.db.insert| replace:: 追加
+
+.. |design.ope.action| replace:: 操作
+.. |design.ope.get| replace:: 取得
+.. |design.role| replace:: 役割
+
+.. |design.vars.title| replace:: ラベル
+.. |design.vars.source| replace:: データソース
+.. |design.vars.modify| replace:: 調整
+
+.. |design.form.params| replace:: フォーム送信値
+.. |design.form.params.get| replace:: |design.form.params| (GET)
+.. |design.form.params.post| replace:: |design.form.params| (POST)
+.. |design.form.expected| replace:: 入力制限(text)・想定値
+.. |design.form.default| replace:: 初期値
+.. |design.form.required| replace:: 必須
+.. |design.form.optional| replace:: 省略可
+
+.. |design.event| replace:: イベント発火
+.. |design.event.click| replace:: 押下
+.. |design.event.change| replace:: 変更
+.. |design.event.link_to| replace:: 遷移先
+
+.. HTTP
+.. |design.req| replace:: リクエスト
+.. |design.req.route| replace:: path
+.. |design.req.params| replace:: パラメータ類
+.. |design.req.params.route| replace:: ルート
+.. |design.req.params.query| replace:: クエリ
+.. |design.req.params.payload| replace:: ペイロード
+.. |design.req.params.header| replace:: ヘッダー
+.. |design.req.method| replace:: method
+.. |design.req.method.get| replace:: GET
+.. |design.req.method.post| replace:: POST
+.. |design.req.method.put| replace:: PUT
+.. |design.req.method.patch| replace:: PATCH
+.. |design.req.method.delete| replace:: DELETE
+.. |design.req.http.ver| replace:: HTTP/1.1
+.. |design.req.header| replace:: ヘッダー
+.. |design.req.payload| replace:: ペイロード
+
+.. |design.cookie| replace:: クッキー
+.. |design.cookie.expires| replace:: 有効期限
+.. |design.cookie.domain| replace:: ドメイン
+.. |design.session| replace:: セッション
+.. |design.cache| replace:: キャッシュ
+.. |design.file| replace:: ファイルストレージ
+
+.. |design.res| replace:: レスポンス
+.. |design.res.status| replace:: ステータス
+
+.. |design.ctype| replace:: content-type
+.. |design.ctype.json| replace:: text/json
+.. |design.ctype.form| replace:: application/x-www-form-urlencoded
+
+.. |design.ui| replace:: UI
+.. |design.ui.click| replace:: 押す/押下/press
+
+.. 契約
+.. |contract.vendor| replace:: 甲
+.. |contract.proper| replace:: 乙
+.. |contract.client| replace:: 丙
+
+.. 環境名
+.. |server.new| replace::  新基盤
+.. |server.old| replace::  旧基盤
+
+.. |site.admin| replace:: 管理サイト
+.. |site.front| replace:: フロントサイト
+.. |site.common| replace:: 当サービス
+.. |actor.user_admin| replace:: 運営
+.. |actor.user_end| replace:: お客様
+
+.. DBテーブル
+.. |comm.id| replace:: id
+.. |comm.id.label| replace:: ID
+.. |comm.password| replace:: password
+.. |comm.password.label| replace:: パスワード
+.. |comm.deleted_at| replace:: deleted_at
+.. |comm.deleted_at.label| replace:: データ削除日時
+.. |comm.modified_at| replace:: modified_at
+.. |comm.modified_at.label| replace:: データ変更日時
+.. |comm.created_at| replace:: created_at
+.. |comm.created_at.label| replace:: データ作成日時
+
+.. |usrs.label| replace:: ユーザー
+.. |usrs.table| replace:: users
+.. |usrs.name| replace:: name
+.. |usrs.name.full| replace:: `|usrs.table|`.`|usrs.name|`
+.. |usrs.name.label| replace:: |usrs.label| 名
+.. |usrs.password| replace:: password
+.. |usrs.password.label| replace:: パスワード
+.. |usrs.buyer.label| replace:: 購入者
+.. |usrs.owner.label| replace:: 所有者
+
+.. ページ
+.. |page.admin.login| replace:: ログイン
+.. |page.admin.template| replace:: テンプレート画面名
+
+.. |page.admin.login.url| replace:: /login
+.. |page.admin.template.url| replace:: /pages/template/${id}

@@ -1,0 +1,11 @@
+sphinx
+sphinx-autobuild
+sphinx_fontawesome
+sphinx_rtd_theme
+sphinx_uedoc_theme
+sphinxcontrib-blockdiag
+sphinxcontrib-seqdiag
+sphinxcontrib-actdiag
+sphinxcontrib-nwdiag
+sphinxcontrib-plantuml
+python-levenshtein

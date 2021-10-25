@@ -1,4 +1,5 @@
 # 概要
+<<<<<<< HEAD
 hnakamur/sphinx を使ったsphinx練習用プロジェクト
 - blockdiag, blockdiag, PlantUML などの
 
@@ -40,3 +41,11 @@ html_theme = 'sphinx_py3doc_enhanced_theme'
 import sphinx_py3doc_enhanced_theme
 html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
 ```
+=======
+設計書をサンプルとしたsphinxプロモート用プロジェクト
+- PlantUML などのUML記述が可能
+- `_replace` の活用によって文書内で疑似的に変数が使える
+- `_glossary` の活用によって文書内での用語整理=定義の統一が効果的に行える
+- 文書内リンク、段落の再利用も可能
+- 表組も可能(cssを表組として表示することも)
+>>>>>>> develop
