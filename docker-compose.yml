@@ -7,8 +7,7 @@ services:
         PLANTUML_DIR: "/plantuml"
         FONT_DIR: "/font"
     volumes:
-      - ./app/:/docs/source
-      #- ./build/:/docs/build
+      - ./app:/docs
     ports:
       - 8888:8000
     environment:
@@ -16,3 +15,4 @@ services:
       FONT_DIR: "/font"
       STATIC_DIR: "_static"
       TEMPLATE_DIR: "_templates"
+    #command: ["make", "latexpdfja"]

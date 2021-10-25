@@ -39,11 +39,13 @@ RUN apk add --update --no-cache --repository http://dl-cdn.alpinelinux.org/alpin
         freetype \
         ttf-droid \
         ttf-droid-nonlatin \
-        # required for plantuml
+        # for latexPDF build
+        texlive-full \
+        # for PlantUml
         openjdk8-jre \
         'graphviz<2.39' \
     && mkdir -p /usr/share/zoneinfo/Asia \
     && ln /etc/localtime /usr/share/zoneinfo/Asia/Tokyo
 
 WORKDIR /docs
-CMD ["sphinx-autobuild", "source", "build/html", "--host", "0.0.0.0"]
+CMD ["sphinx-autobuild", ".", "_build/html", "--host", "0.0.0.0"]
