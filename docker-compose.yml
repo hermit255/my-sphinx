@@ -7,7 +7,8 @@ services:
         PLANTUML_DIR: "/plantuml"
         FONT_DIR: "/font"
     volumes:
-      - ./app/:/docs
+      - ./app/:/docs/source
+      - ./build/:/docs/build
     ports:
       - 8888:8000
     environment:
