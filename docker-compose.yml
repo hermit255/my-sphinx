@@ -7,12 +7,14 @@ services:
         PLANTUML_DIR: "/plantuml"
         FONT_DIR: "/font"
     volumes:
-      - ./app:/docs
+      - ./app:/app
     ports:
       - 8888:8000
     environment:
-      PLANTUML_DIR: "/plantuml"
-      FONT_DIR: "/font"
+      # used at conf.py
       STATIC_DIR: "_static"
       TEMPLATE_DIR: "_templates"
+    # build html or pdf
+    command: ["sphinx-autobuild", ".", "_build/html", "--host", "0.0.0.0"]
+    #command: ["sphinx-autobuild", ".", "_build/html", "--host", "0.0.0.0", "-E"]
     #command: ["make", "latexpdfja"]
