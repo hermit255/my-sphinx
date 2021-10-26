@@ -22,8 +22,8 @@ def setup(app):
     app.add_css_file('css/custom.css')
 
 import os
-plantuml_dir = os.environ['PLANTUML_DIR']
-font_dir = os.environ['FONT_DIR']
+plantuml_path = os.environ['PLANTUML_PATH']
+noto_font_path = os.environ['NOTO_FONT_PATH']
 static_dir = os.environ['STATIC_DIR']
 template_dir = os.environ['TEMPLATE_DIR']
 
@@ -58,10 +58,10 @@ extensions = [
 extensions.append('sphinx.ext.graphviz')
 extensions.append('sphinxcontrib.plantuml')
 
-blockdiag_fontpath = '%s/NotoSansCJKjp-Regular.ttf' % font_dir
-seqdiag_fontpath = '%s/NotoSansCJKjp-Regular.ttf' % font_dir
-actdiag_fontpath = '%s/NotoSansCJKjp-Regular.ttf' % font_dir
-nwdiag_fontpath = '%s/NotoSansCJKjp-Regular.ttf' % font_dir
+blockdiag_fontpath = noto_font_path
+seqdiag_fontpath = noto_font_path
+actdiag_fontpath = noto_font_path
+nwdiag_fontpath = noto_font_path
 
 blockdiag_html_image_format = 'SVG'
 seqdiag_html_image_format = 'SVG'
@@ -77,7 +77,7 @@ graphviz_dot_args = ['-Gfontname=sans-serif', '-Efontname=sans-serif', '-Nfontna
 graphviz_output_format = 'svg'
 
 
-plantuml = 'java -jar %s/plantuml.jar' % plantuml_dir
+plantuml = 'java -jar %s' % plantuml_path
 plantuml_output_format = 'svg'
 
 # The master toctree document.
