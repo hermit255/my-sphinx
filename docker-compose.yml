@@ -16,4 +16,5 @@ services:
       TEMPLATE_DIR: "_templates"
     # build html or pdf
     command: ["sphinx-autobuild", ".", "_build/html", "--host", "0.0.0.0"]
+    #command: ["sphinx-autobuild", ".", "_build/html", "--host", "0.0.0.0", "-E"]
     #command: ["make", "latexpdfja"]
