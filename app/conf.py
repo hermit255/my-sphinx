@@ -1,5 +1,6 @@
 # -- Environment settings -----------------------------------------------------
 import os
+
 plantuml_path = os.environ['PLANTUML_PATH']
 noto_font_path = os.environ['NOTO_FONT_PATH']
 static_dir = os.environ['STATIC_DIR']
@@ -28,6 +29,16 @@ extensions.append("uedoc_theme")
 html_theme = "uedoc_theme"
 html_favicon = "https://cdn.icon-icons.com/icons2/112/PNG/512/python_18894.png"
 html_copy_source = False
+
+# -- Epub settings ---------------------------------------------------
+epub_title = project
+epub_author = copyright
+epub_basename = project
+epub_language = u'ja'
+epub_publisher = copyright
+epub_identifier = u'http://example.com'
+epub_scheme = 'URL'
+epub_tocdepth = 2
 
 # -- General configuration ---------------------------------------------------
 html_sidebars = {
