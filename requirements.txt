@@ -9,3 +9,4 @@ sphinxcontrib-actdiag
 sphinxcontrib-nwdiag
 sphinxcontrib-plantuml
 python-levenshtein
+myst-parser

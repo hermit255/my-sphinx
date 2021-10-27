@@ -16,6 +16,8 @@ extensions = [
   'sphinxcontrib.actdiag',
   'sphinxcontrib.nwdiag',
   'sphinxcontrib.blockdiag',
+  # markdown parser
+  'myst_parser',
 ]
 # -- Project information -----------------------------------------------------
 project = u'Project Name'
@@ -52,7 +54,11 @@ html_last_updated_fmt = '%Y-%m-%d %H:%M'
 
 language = 'ja'
 master_doc = 'index'
-source_suffix = '.rst'
+source_suffix = {
+  '.rst': 'restructuredtext',
+  '.txt': 'restructuredtext',
+  '.md': 'markdown',
+}
 htmlhelp_basename = 'doc'
 
 # -- Global terms list -----------------------------------------------------
