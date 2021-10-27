@@ -30,15 +30,17 @@ Welcome to 設計書サンプル's documentation!
 
    design/database/index
 
-.. toctree::
-   :maxdepth: 1
-   :caption: 表現方法サンプル:
+.. ifconfig:: dev == True
 
-   samples/index
+ .. toctree::
+    :maxdepth: 1
+    :caption: 表現方法サンプル:
 
-Indices and tables
-==================
+    samples/index
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+ Indices and tables
+ ==================
+
+ * :ref:`genindex`
+ * :ref:`modindex`
+ * :ref:`search`

@@ -44,14 +44,16 @@ master_doc = 'index'
 source_suffix = '.rst'
 htmlhelp_basename = 'doc'
 
-# -- Assets settings -----------------------------------------------------
-def setup(app):
-  app.add_css_file('css/code-block.css')
-  app.add_css_file('css/custom.css')
 # -- Global terms list -----------------------------------------------------
 rst_prolog= u"""
 .. include:: /docs/_replace.txt
 """
+# -- Custom settings -----------------------------------------------------
+def setup(app):
+  app.add_css_file('css/code-block.css')
+  app.add_css_file('css/custom.css')
+  app.add_config_value('dev', True, 'html')
+
 # -- Diagram configuration ---------------------------------------------------
 blockdiag_fontpath = noto_font_path
 seqdiag_fontpath = noto_font_path
