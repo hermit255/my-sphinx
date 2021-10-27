@@ -10,3 +10,4 @@ sphinxcontrib-nwdiag
 sphinxcontrib-plantuml
 python-levenshtein
 myst-parser
+sphinx-hoverxref

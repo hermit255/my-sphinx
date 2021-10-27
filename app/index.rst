@@ -1,6 +1,13 @@
 ==========================================
 Welcome to 設計書サンプル's documentation!
 ==========================================
+
+This will :hoverxref:`show a tooltip <test>` in the linked words to ``test``.
+
+.. _test:
+
+   Here is test
+
 .. 設計書サンプル documentation master file, created by
    sphinx-quickstart on Thu Sep  3 03:42:53 2020.
    You can adapt this file completely to your liking, but it should at least

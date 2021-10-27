@@ -94,3 +94,13 @@ graphviz_dot_args = ['-Gfontname=sans-serif', '-Efontname=sans-serif', '-Nfontna
 graphviz_output_format = 'svg'
 plantuml = 'java -jar %s' % plantuml_path
 plantuml_output_format = 'svg'
+
+# -- HoverXref configuration ---------------------------------------------------
+extensions.append('hoverxref.extension')
+hoverxref_role_types = {
+  'hoverxref': 'modal',
+  'ref': 'modal',  # for hoverxref_auto_ref config
+  'confval': 'tooltip',  # for custom object
+  'mod': 'tooltip',  # for Python Sphinx Domain
+  'class': 'tooltip',  # for Python Sphinx Domain
+}
