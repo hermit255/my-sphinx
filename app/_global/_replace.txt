@@ -1,4 +1,5 @@
 .. ドキュメント
+.. |docs.title| replace:: 文書タイトル
 .. |docs.version| replace:: バージョン
 .. |docs.author| replace:: 作成者
 .. |docs.description| replace:: 説明

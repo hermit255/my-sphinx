@@ -36,7 +36,7 @@ html_copy_source = False
 epub_title = project
 epub_author = copyright
 epub_basename = project
-epub_language = u'ja'
+epub_language = u'en'
 epub_publisher = copyright
 epub_identifier = u'http://example.com'
 epub_scheme = 'URL'
@@ -52,7 +52,7 @@ templates_path = [template_dir]
 
 html_last_updated_fmt = '%Y-%m-%d %H:%M'
 
-language = 'ja'
+language = 'en'
 master_doc = 'index'
 source_suffix = {
   '.rst': 'restructuredtext',
@@ -61,9 +61,9 @@ source_suffix = {
 }
 htmlhelp_basename = 'doc'
 
-# -- Global terms list -----------------------------------------------------
+# -- Read before every docs read -----------------------------------------------------
 rst_prolog= u"""
-.. include:: /docs/_replace.txt
+.. include:: /_global/_replace.txt
 """
 # -- Custom settings -----------------------------------------------------
 def setup(app):
