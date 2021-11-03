@@ -1,12 +1,6 @@
 ==========================================
-Welcome to 設計書サンプル's documentation!
+Index
 ==========================================
-
-This will :hoverxref:`show a tooltip <test>` in the linked words to ``test``.
-
-.. _test:
-
-   Here is test
 
 .. 設計書サンプル documentation master file, created by
    sphinx-quickstart on Thu Sep  3 03:42:53 2020.
@@ -14,34 +8,29 @@ This will :hoverxref:`show a tooltip <test>` in the linked words to ``test``.
    contain the root `toctree` directive.
 
 .. toctree::
-   :maxdepth: 1
-   :caption: 文書管理:
+   :maxdepth: 2
 
    docs/index
 
 .. toctree::
-   :maxdepth: 1
-   :caption: ビジネス要件:
+   :maxdepth: 2
 
    business/index
 
 .. toctree::
-   :maxdepth: 1
-   :caption: アプリケーション設計:
+   :maxdepth: 2
 
    design/admin/index
 
 .. toctree::
-   :maxdepth: 1
-   :caption: DB設計:
+   :maxdepth: 2
 
    design/database/index
 
 .. ifconfig:: dev == True
 
  .. toctree::
-    :maxdepth: 1
-    :caption: 表現方法サンプル:
+    :maxdepth: 2
 
     samples/index
 
